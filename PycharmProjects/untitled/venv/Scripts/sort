@@ -1,0 +1,15 @@
+def sorts(a,b):
+    new=sorted(b)
+    for i in range(len(new)):
+        for j in range(i,len(b)):
+            if new[i]==b[j]:
+                temp=a[j]
+                a.remove(temp)
+                #b.pop(j)
+                a.insert(i,temp)
+                break
+    return a
+a=["a", "b", "c", "d", "e", "f", "g", "h", "i"]
+b=[ 0,   1,   1,    0,   1,   2,   2,   0,   1]
+s=sorts(a,b)
+print(s)
