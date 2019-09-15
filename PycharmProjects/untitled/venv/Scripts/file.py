@@ -12,6 +12,7 @@ for lines in f:
     wcount+=len(words)  # To find no.of letters in a file
     for i in words:
         ccount+=len(i)
+f.close()
 print(lcount)
 print(wcount)
 print(ccount)
